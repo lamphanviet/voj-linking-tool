@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>VOJ Linking Tool</title>
+		<style>
+			body { min-width:360px; overflow-x:hidden; background: #F7FFF8; }
+			a { text-decoration: none; color: inherit; color: #1C6B8C; }
+			table caption { background: #205B7A; color: white; }
+			hr { padding: 0px; margin: 2px 0px 0px 0px; }
+			#footer { font-size: 0.8em; }
+		</style>
+    	<script type="text/javascript" src="jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<table width='100%'>
+			<thead>
+				<caption>
+					Choose problem:
+					<select id="problemList">
+					<select>
+					or <input type="text" id="problem" value="" size="12" />
+				</caption>
+			</thead>
+			<tbody>
+				<tr>
+					<td align="center"><a href="http://vn.spoj.com/" target="_blank"><img src="icon-voj.png" alt="VOJ" height="30" width="45"></a></td>
+					<td>
+						<a id="link_1" href="http://vn.spoj.com/" title='Đề bài trên VOJ' target="_blank">statement</a> |
+						<a id="link_2" href="http://vn.spoj.com/" title='Nộp bài' target="_blank">submit</a> |
+						<a id="link_3" href="http://vn.spoj.com/" title='Các bài đã nộp' target="_blank">submissions</a> |
+						<a id="link_4" href="http://vn.spoj.com/" title='Làm tốt nhất' target="_blank">ranking</a>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><a href="http://vnoi.info/" target="_blank"><img src="icon-vnoi.png" alt="VNOI" height="30" width="45"></a></td>
+					<td>
+						<a id="link_5" href="http://vnoi.info/" title='Đề bài trên VNOI' target="_blank">statement</a> |
+						<form action="http://vnoi.info/index.php?option=com_fireboard&amp;Itemid=26&amp;func=search" method="post" target="_blank" style="display:inline">
+							<input id="search" type="text" name="searchword" size="20" value="Tìm kiếm" />
+							<input type="submit" value="search" name="submit"/>
+						</form>
+					</td>
+				</tr>
+			<tbody>
+		</table>
+		<div id="footer" align='right'>
+			<hr />
+			VOJ Linking Tool / Copyright &copy; 2012 - lamphanviet
+		</div>
+		<script type="text/javascript" src="popup.js"></script>
+	</body>
+</html>
